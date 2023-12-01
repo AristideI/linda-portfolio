@@ -3,10 +3,710 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link href="/dist/output.css" rel="stylesheet" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          theme: {
+            screens: {
+              "2xl": { max: "1535px" },
+              xl: { max: "1279px" },
+              lg: { max: "1023px" },
+              md: { max: "767px" },
+              sm: { max: "639px" },
+            },
+          },
+          extend: {
+            colors: {
+              green1: "#C5D926",
+              green2: "#A6CD8E",
+              green3: "#26432F",
+              gray1: "#3D3D3D",
+              gray2: "#c3c3c3",
+              bg: "#FBFEE1",
+            },
+          },
+        },
+      };
+    </script>
+    <link rel="stylesheet" href="./src/input.css" />
     <title>Document</title>
   </head>
-  <body>
-    <section class="h-screen w-full bg-red-500">This it the bigg</section>
+  <body class="bg-bg text-gray1 px-[8%]">
+    <header class="flex justify-end gap-4 font-semibold text-base py-4">
+      <a href="#about">About me</a>
+      <a href="#services">services</a>
+      <a href="#exprience">Expriences</a>
+      <a href="#education">Education</a>
+      <a href="#testimonials"></a>
+      <a href="#contact">Contact</a>
+    </header>
+    <main>
+      <!-- HERO SECTION -->
+      <article class="flex justify-between p-8 items-center mt-10">
+        <section class="w-1/2">
+          <h1 class="font-serif font-bold text-7xl whitespace-nowrap mb-8">
+            Linda Irakoze
+          </h1>
+          <p class="w-5/6">
+            Step into a world of project precision and front desk finesse with
+            <span class="font-serif text-green1">ME</span>. My mission is to
+            enhance your projects and ensure a warm welcome at the front desk.
+          </p>
+        </section>
+        <section class="w-96 h-[30rem] bg-gray2 rounded-full overflow-hidden">
+          <img
+            class="w-full h-full object-cover heroImage"
+            src="./images/libg3.png"
+            alt=""
+          />
+        </section>
+      </article>
+      <!-- ABOUT ME -->
+      <article
+        id="about"
+        class="w-full flex justify-center items-center gap-12 h-[90vh] py-12"
+      >
+        <section class="w-2/5 flex flex-col justify-between h-full gap-4">
+          <div class="w-full flex h-1/2 gap-4">
+            <div class="w-1/2 h-full rounded-lg overflow-hidden">
+              <img
+                class="w-full h-full object-cover object-top"
+                src="./images/li1.jpg"
+                alt=""
+              />
+            </div>
+            <div class="w-1/2 h-full rounded-lg overflow-hidden">
+              <img
+                class="w-full h-full object-cover object-top"
+                src="./images/li2.jpg"
+                alt=""
+              />
+            </div>
+          </div>
+          <div class="w-full h-1/2 rounded-lg overflow-hidden">
+            <img
+              class="w-full h-full object-cover object-top"
+              src="./images/li3.jpg"
+              alt=""
+            />
+          </div>
+        </section>
+        <section class="w-2/5 flex flex-col gap-4">
+          <h1 class="font-serif font-bold text-2xl">About Me</h1>
+          <p>
+            Dedicated professional with a strong work ethic and a knack for
+            problem-solving. Adept at project management, customer care, and
+            effective communication. Despite my youth, I bring energy and
+            talent, constantly seeking opportunities to expand my skills and
+            contribute to organizational success.
+          </p>
+        </section>
+      </article>
+
+      <!-- SERVICES -->
+
+      <article id="services" class="mt-12 flex justify-between items-center">
+        <section class="w-2/5">
+          <h1 class="font-serif font-bold text-2xl mb-4">Services</h1>
+          <p>
+            Welcome to a suite of services for project excellence. I specialize
+            in clear communication, team support, quality assurance, front desk
+            coordination, and assistant project management. Together, these
+            services ensure success and excellence in every endeavor.
+          </p>
+        </section>
+        <section class="w-3/5 grid grid-cols-2 gap-6">
+          <div
+            class="bg-gray1 rounded-tl-3xl rounded-br-3xl p-4 flex items-center gap-4 text-bg"
+          >
+            <img class="w-12" src="./images/desk.png" alt="" />
+            <div>
+              <p class="font-semibold text-base">Front Desk Coordinator</p>
+              <p class="text-xs">
+                Managing the front desk expertly, and creating a positive
+                stakeholder experience.
+              </p>
+            </div>
+          </div>
+          <div
+            class="bg-gray1 rounded-tr-3xl rounded-bl-3xl p-4 flex items-center gap-4 text-bg"
+          >
+            <img class="w-12" src="./images/communication.png" alt="" />
+            <div>
+              <p class="font-semibold text-base">Communication Specialist</p>
+              <p class="text-xs">
+                Navigate project objectives, fostering collaboration and
+                ensuring seamless team information exchange.
+              </p>
+            </div>
+          </div>
+          <div
+            class="bg-gray1 rounded-tr-3xl rounded-bl-3xl p-4 flex items-center gap-4 text-bg"
+          >
+            <img class="w-12" src="./images/team.png" alt="" />
+            <div>
+              <p class="font-semibold text-base">Team Support Consultant</p>
+              <p class="text-xs">
+                Resolve issues, nurture team success, and foster individual
+                professional development.
+              </p>
+            </div>
+          </div>
+          <div
+            class="bg-gray1 rounded-tl-3xl rounded-br-3xl p-4 flex items-center gap-4 text-bg"
+          >
+            <img class="w-12" src="./images/assis.png" alt="" />
+            <div>
+              <p class="font-semibold text-base">Assistant Project Manager</p>
+              <p class="text-xs">
+                Contribute to planning, communicate project goals, and monitor
+                progress for successful project completion.
+              </p>
+            </div>
+          </div>
+        </section>
+      </article>
+
+      <!-- EDUCATOIN EXPERIENCE -->
+
+      <div class="relative font-inter">
+        <main
+          class="relative min-h-screen flex flex-col justify-center overflow-hidden"
+        >
+          <div class="w-full max-w-6xl mx-auto px-4 md:px-6 py-24">
+            <p class="font-bold text-3xl font-serif text-center">Experience</p>
+            <div
+              class="flex flex-col justify-center divide-y divide-slate-200 [&>*]:py-16"
+            >
+              <div class="w-full max-w-3xl mx-auto">
+                <!-- Vertical Timeline #1 -->
+                <div class="-my-6">
+                  <!-- Item #1 -->
+                  <div class="relative pl-8 sm:pl-32 py-6 group">
+                    <!-- Purple label -->
+                    <div
+                      class="font-serif font-bold text-2xl text-emerald-500 mb-1 sm:mb-0"
+                    >
+                      SOLACE
+                    </div>
+                    <!-- Vertical line (::before) ~ Date ~ Title ~ Circle marker (::after) -->
+                    <div
+                      class="flex flex-col sm:flex-row items-start mb-1 group-last:before:hidden before:absolute before:left-2 sm:before:left-0 before:h-full before:px-px before:bg-slate-300 sm:before:ml-[6.5rem] before:self-start before:-translate-x-1/2 before:translate-y-3 after:absolute after:left-2 sm:after:left-0 after:w-2 after:h-2 after:bg-indigo-600 after:border-4 after:box-content after:border-slate-50 after:rounded-full sm:after:ml-[6.5rem] after:-translate-x-1/2 after:translate-y-1.5"
+                    >
+                      <time
+                        class="sm:absolute left-0 translate-y-0.5 inline-flex items-center justify-center text-xs font-semibold uppercase w-20 h-6 mb-3 sm:mb-0 text-emerald-600 bg-emerald-100 rounded-full"
+                        >AUG, 2022</time
+                      >
+                      <div class="text-xl font-bold text-gray1">
+                        Navigating Challenges, Empowering Lives
+                      </div>
+                    </div>
+                    <!-- Content -->
+                    <div class="text-slate-500">
+                      Greeted visitors, managed the front desk, and provided
+                      administrative support. Conducted proactive customer
+                      outreach, resolved inquiries, and maintained precise
+                      records. As Store Keeper, handled merchandise inspection,
+                      issue resolution, and generated inventory reports.
+                      Enhanced multitasking and attention to detail for a
+                      welcoming and streamlined environment.
+                    </div>
+                  </div>
+
+                  <!-- Item #2 -->
+                  <div class="relative pl-8 sm:pl-32 py-6 group">
+                    <!-- Purple label -->
+                    <div
+                      class="font-caveat font-medium text-2xl text-emerald-500 mb-1 sm:mb-0"
+                    >
+                      Interparliamental Union Assembly
+                    </div>
+                    <!-- Vertical line (::before) ~ Date ~ Title ~ Circle marker (::after) -->
+                    <div
+                      class="flex flex-col sm:flex-row items-start mb-1 group-last:before:hidden before:absolute before:left-2 sm:before:left-0 before:h-full before:px-px before:bg-slate-300 sm:before:ml-[6.5rem] before:self-start before:-translate-x-1/2 before:translate-y-3 after:absolute after:left-2 sm:after:left-0 after:w-2 after:h-2 after:bg-indigo-600 after:border-4 after:box-content after:border-slate-50 after:rounded-full sm:after:ml-[6.5rem] after:-translate-x-1/2 after:translate-y-1.5"
+                    >
+                      <time
+                        class="sm:absolute left-0 translate-y-0.5 inline-flex items-center justify-center text-xs font-semibold uppercase w-20 h-6 mb-3 sm:mb-0 text-emerald-600 bg-emerald-100 rounded-full"
+                        >OCT, 2022</time
+                      >
+                      <div class="text-xl font-bold text-gray1">
+                        Global Dialogues, Local Impact
+                      </div>
+                    </div>
+                    <!-- Content -->
+                    <div class="text-slate-500">
+                      Serving at the Interparliamental Union Assembly in 2022, I
+                      became part of a global dialogue shaping policies for a
+                      better future.
+                    </div>
+                  </div>
+
+                  <!-- Item #3 -->
+                  <div class="relative pl-8 sm:pl-32 py-6 group">
+                    <!-- Purple label -->
+                    <div
+                      class="font-caveat font-medium text-2xl text-emerald-500 mb-1 sm:mb-0"
+                    >
+                      International Monetary Fund
+                    </div>
+                    <!-- Vertical line (::before) ~ Date ~ Title ~ Circle marker (::after) -->
+                    <div
+                      class="flex flex-col sm:flex-row items-start mb-1 group-last:before:hidden before:absolute before:left-2 sm:before:left-0 before:h-full before:px-px before:bg-slate-300 sm:before:ml-[6.5rem] before:self-start before:-translate-x-1/2 before:translate-y-3 after:absolute after:left-2 sm:after:left-0 after:w-2 after:h-2 after:bg-indigo-600 after:border-4 after:box-content after:border-slate-50 after:rounded-full sm:after:ml-[6.5rem] after:-translate-x-1/2 after:translate-y-1.5"
+                    >
+                      <time
+                        class="sm:absolute left-0 translate-y-0.5 inline-flex items-center justify-center text-xs font-semibold uppercase w-20 h-6 mb-3 sm:mb-0 text-emerald-600 bg-emerald-100 rounded-full"
+                        >May, 2023</time
+                      >
+                      <div class="text-xl font-bold text-gray1">
+                        Economic Resilience in a Changing World
+                      </div>
+                    </div>
+                    <!-- Content -->
+                    <div class="text-slate-500">
+                      Joining the International Monetary Fund in 2023, I played
+                      a role in understanding and addressing the economic
+                      challenges of our changing world.
+                    </div>
+                  </div>
+
+                  <!-- Item #4 -->
+                  <div class="relative pl-8 sm:pl-32 py-6 group">
+                    <!-- Purple label -->
+                    <div
+                      class="font-caveat font-medium text-2xl text-emerald-500 mb-1 sm:mb-0"
+                    >
+                      International Conference on Public Health Africa
+                    </div>
+                    <!-- Vertical line (::before) ~ Date ~ Title ~ Circle marker (::after) -->
+                    <div
+                      class="flex flex-col sm:flex-row items-start mb-1 group-last:before:hidden before:absolute before:left-2 sm:before:left-0 before:h-full before:px-px before:bg-slate-300 sm:before:ml-[6.5rem] before:self-start before:-translate-x-1/2 before:translate-y-3 after:absolute after:left-2 sm:after:left-0 after:w-2 after:h-2 after:bg-indigo-600 after:border-4 after:box-content after:border-slate-50 after:rounded-full sm:after:ml-[6.5rem] after:-translate-x-1/2 after:translate-y-1.5"
+                    >
+                      <time
+                        class="sm:absolute left-0 translate-y-0.5 inline-flex items-center justify-center text-xs font-semibold uppercase w-20 h-6 mb-3 sm:mb-0 text-emerald-600 bg-emerald-100 rounded-full"
+                        >JULY, 2023</time
+                      >
+                      <div class="text-xl font-bold text-gray1">
+                        Innovations for Health, Transforming Communities
+                      </div>
+                    </div>
+                    <!-- Content -->
+                    <div class="text-slate-500">
+                      The International Conference on Public Health Africa in
+                      2022 was a platform where I delved into innovative
+                      solutions shaping the future of healthcare.
+                    </div>
+                  </div>
+                </div>
+                <!-- End: Vertical Timeline #1 -->
+              </div>
+
+              <div class="w-full max-w-3xl mx-auto">
+                <!-- Vertical Timeline #2 -->
+                <div
+                  class="space-y-8 relative before:absolute before:inset-0 before:ml-5 before:-translate-x-px md:before:mx-auto md:before:translate-x-0 before:h-full before:w-0.5 before:bg-gradient-to-b before:from-transparent before:via-slate-300 before:to-transparent"
+                >
+                  <p class="font-bold font-serif text-3xl text-center pb-8">
+                    Education
+                  </p>
+                  <!-- Item #1 -->
+                  <div
+                    class="relative flex items-center justify-between md:justify-normal md:odd:flex-row-reverse group is-active"
+                  >
+                    <!-- Icon -->
+                    <div
+                      class="flex items-center justify-center w-10 h-10 rounded-full border border-white bg-slate-300 group-[.is-active]:bg-emerald-500 text-slate-500 group-[.is-active]:text-emerald-50 shadow shrink-0 md:order-1 md:group-odd:-translate-x-1/2 md:group-even:translate-x-1/2"
+                    >
+                      <svg
+                        class="fill-current"
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="12"
+                        height="10"
+                      >
+                        <path
+                          fill-rule="nonzero"
+                          d="M10.422 1.257 4.655 7.025 2.553 4.923A.916.916 0 0 0 1.257 6.22l2.75 2.75a.916.916 0 0 0 1.296 0l6.415-6.416a.916.916 0 0 0-1.296-1.296Z"
+                        />
+                      </svg>
+                    </div>
+                    <!-- Card -->
+                    <div
+                      class="w-[calc(100%-4rem)] md:w-[calc(50%-2.5rem)] bg-white p-4 rounded border border-slate-200 shadow"
+                    >
+                      <div
+                        class="flex items-center justify-between space-x-2 mb-1"
+                      >
+                        <div class="font-bold text-slate-900">High School</div>
+                        <time class="font-caveat font-medium text-green-800"
+                          >July~2021</time
+                        >
+                      </div>
+                      <div class="text-slate-500">
+                        Graduated High school in 2021, at Efotec/ E.S Kanombe,
+                        where I was majoring History, Economics, and Geography
+                      </div>
+                    </div>
+                  </div>
+
+                  <!-- Item #2 -->
+                  <div
+                    class="relative flex items-center justify-between md:justify-normal md:odd:flex-row-reverse group is-active"
+                  >
+                    <!-- Icon -->
+                    <div
+                      class="flex items-center justify-center w-10 h-10 rounded-full border border-white bg-slate-300 group-[.is-active]:bg-emerald-500 text-slate-500 group-[.is-active]:text-emerald-50 shadow shrink-0 md:order-1 md:group-odd:-translate-x-1/2 md:group-even:translate-x-1/2"
+                    >
+                      <svg
+                        class="fill-current"
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="12"
+                        height="10"
+                      >
+                        <path
+                          fill-rule="nonzero"
+                          d="M10.422 1.257 4.655 7.025 2.553 4.923A.916.916 0 0 0 1.257 6.22l2.75 2.75a.916.916 0 0 0 1.296 0l6.415-6.416a.916.916 0 0 0-1.296-1.296Z"
+                        />
+                      </svg>
+                    </div>
+                    <!-- Card -->
+                    <div
+                      class="w-[calc(100%-4rem)] md:w-[calc(50%-2.5rem)] bg-white p-4 rounded border border-slate-200 shadow"
+                    >
+                      <div
+                        class="flex items-center justify-between space-x-2 mb-1"
+                      >
+                        <div class="font-bold text-slate-900">
+                          Creative & Critical Thinking
+                        </div>
+                        <time class="font-caveat font-medium text-green-800"
+                          >Feb~2023</time
+                        >
+                      </div>
+                      <div class="text-slate-500">
+                        An online non-credit course authorized by IBM Skills
+                        Network and offered through Coursera
+                      </div>
+                    </div>
+                  </div>
+
+                  <!-- Item #3 -->
+                  <div
+                    class="relative flex items-center justify-between md:justify-normal md:odd:flex-row-reverse group is-active"
+                  >
+                    <!-- Icon -->
+                    <div
+                      class="flex items-center justify-center w-10 h-10 rounded-full border border-white bg-slate-300 group-[.is-active]:bg-emerald-500 text-slate-500 group-[.is-active]:text-emerald-50 shadow shrink-0 md:order-1 md:group-odd:-translate-x-1/2 md:group-even:translate-x-1/2"
+                    >
+                      <svg
+                        class="fill-current"
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="12"
+                        height="10"
+                      >
+                        <path
+                          fill-rule="nonzero"
+                          d="M10.422 1.257 4.655 7.025 2.553 4.923A.916.916 0 0 0 1.257 6.22l2.75 2.75a.916.916 0 0 0 1.296 0l6.415-6.416a.916.916 0 0 0-1.296-1.296Z"
+                        />
+                      </svg>
+                    </div>
+                    <!-- Card -->
+                    <div
+                      class="w-[calc(100%-4rem)] md:w-[calc(50%-2.5rem)] bg-white p-4 rounded border border-slate-200 shadow"
+                    >
+                      <div
+                        class="flex items-center justify-between space-x-2 mb-1"
+                      >
+                        <div class="font-bold text-slate-900">
+                          Gender Analytics
+                        </div>
+                        <time class="font-caveat font-medium text-green-800"
+                          >Sept~2023</time
+                        >
+                      </div>
+                      <div class="text-slate-500">
+                        an online non-credit course authorized by University of
+                        Toronto and offered through Coursera
+                      </div>
+                    </div>
+                  </div>
+
+                  <!-- Item #4 -->
+                  <div
+                    class="relative flex items-center justify-between md:justify-normal md:odd:flex-row-reverse group is-active"
+                  >
+                    <!-- Icon -->
+                    <div
+                      class="flex items-center justify-center w-10 h-10 rounded-full border border-white bg-slate-300 group-[.is-active]:bg-emerald-500 text-slate-500 group-[.is-active]:text-emerald-50 shadow shrink-0 md:order-1 md:group-odd:-translate-x-1/2 md:group-even:translate-x-1/2"
+                    >
+                      <svg
+                        class="fill-current"
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="12"
+                        height="10"
+                      >
+                        <path
+                          fill-rule="nonzero"
+                          d="M10.422 1.257 4.655 7.025 2.553 4.923A.916.916 0 0 0 1.257 6.22l2.75 2.75a.916.916 0 0 0 1.296 0l6.415-6.416a.916.916 0 0 0-1.296-1.296Z"
+                        />
+                      </svg>
+                    </div>
+                    <!-- Card -->
+                    <div
+                      class="w-[calc(100%-4rem)] md:w-[calc(50%-2.5rem)] bg-white p-4 rounded border border-slate-200 shadow"
+                    >
+                      <div
+                        class="flex items-center justify-between space-x-2 mb-1"
+                      >
+                        <div class="font-bold text-slate-900">
+                          Project Management Course
+                        </div>
+                        <time class="font-caveat font-medium text-green-800"
+                          >July~2023</time
+                        >
+                      </div>
+                      <div class="text-slate-500">
+                        an online Coursera course authorized by University of
+                        Colorado Boulder. Diving into the art of Project
+                        Management
+                      </div>
+                    </div>
+                  </div>
+
+                  <!-- Item #5 -->
+                  <div
+                    class="relative flex items-center justify-between md:justify-normal md:odd:flex-row-reverse group"
+                  >
+                    <!-- Icon -->
+                    <div
+                      class="flex items-center justify-center w-10 h-10 rounded-full border border-white bg-slate-300 group-[.is-active]:bg-emerald-500 text-slate-500 group-[.is-active]:text-emerald-50 shadow shrink-0 md:order-1 md:group-odd:-translate-x-1/2 md:group-even:translate-x-1/2"
+                    >
+                      <svg
+                        class="fill-current"
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="12"
+                        height="12"
+                      >
+                        <path
+                          d="M12 10v2H7V8.496a.5.5 0 0 0-.5-.5h-1a.5.5 0 0 0-.5.5V12H0V4.496a.5.5 0 0 1 .206-.4l5.5-4a.5.5 0 0 1 .588 0l5.5 4a.5.5 0 0 1 .206.4V10Z"
+                        />
+                      </svg>
+                    </div>
+                    <!-- Card -->
+                    <div
+                      class="w-[calc(100%-4rem)] md:w-[calc(50%-2.5rem)] bg-white p-4 rounded border border-slate-200 shadow"
+                    >
+                      <div
+                        class="flex items-center justify-between space-x-2 mb-1"
+                      >
+                        <div class="font-bold text-slate-900">
+                          African Leadership University
+                        </div>
+                        <time class="font-caveat font-medium text-green-500"
+                          >~Current</time
+                        >
+                      </div>
+                      <div class="text-slate-500">
+                        Currently I am a student at African Leadership
+                        University, majoring Bachelors with honors in
+                        Entreprenuerial Leadership
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!-- End: Vertical Timeline #2 -->
+              </div>
+            </div>
+          </div>
+        </main>
+
+        <!-- Banner with links -->
+        <div
+          class="fixed bottom-0 right-0 w-full md:bottom-6 md:right-12 md:w-auto z-50"
+          :class="bannerOpen ? '' : 'hidden'"
+          x-data="{ bannerOpen: true }"
+        >
+          <div
+            class="bg-slate-800 text-sm p-3 md:rounded shadow flex justify-between"
+          >
+            <div class="text-slate-500 inline-flex">
+              <a
+                class="font-medium hover:underline text-slate-300"
+                href="https://cruip.com/3-examples-of-brilliant-vertical-timelines-with-tailwind-css/"
+                target="_blank"
+              >
+                Read Tutorial
+              </a>
+              <span class="italic px-1.5">or</span>
+              <a
+                class="font-medium hover:underline text-indigo-500 flex items-center"
+                href="https://github.com/cruip/cruip-tutorials/blob/main/vertical-timelines/index.html"
+                target="_blank"
+                rel="noreferrer"
+              >
+                <span>Download</span>
+                <svg
+                  class="fill-indigo-400 ml-1"
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="9"
+                  height="9"
+                >
+                  <path
+                    d="m1.649 8.514-.91-.915 5.514-5.523H2.027l.01-1.258h6.388v6.394H7.158l.01-4.226z"
+                  />
+                </svg>
+              </a>
+            </div>
+            <button
+              class="text-slate-500 hover:text-slate-400 pl-2 ml-3 border-l border-slate-700"
+              @click="bannerOpen = false"
+            >
+              <span class="sr-only">Close</span>
+              <svg class="w-4 h-4 shrink-0 fill-current" viewBox="0 0 16 16">
+                <path
+                  d="M12.72 3.293a1 1 0 00-1.415 0L8.012 6.586 4.72 3.293a1 1 0 00-1.414 1.414L6.598 8l-3.293 3.293a1 1 0 101.414 1.414l3.293-3.293 3.293 3.293a1 1 0 001.414-1.414L9.426 8l3.293-3.293a1 1 0 000-1.414z"
+                />
+              </svg>
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Testimonials -->
+
+      <section class="text-gray1">
+        <p class="font-bold font-serif text-3xl text-center mb-8">
+          Testimonials
+        </p>
+        <div class="flex flex-wrap -m-4">
+          <div class="p-4 md:w-1/2 w-full">
+            <div class="h-full border-2 border-gray1 text-gray1 p-8 rounded-xl">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="rgb(61 61 61)"
+                class="block w-5 h-5 text-gray-400 mb-4"
+                viewBox="0 0 975.036 975.036"
+              >
+                <path
+                  d="M925.036 57.197h-304c-27.6 0-50 22.4-50 50v304c0 27.601 22.4 50 50 50h145.5c-1.9 79.601-20.4 143.3-55.4 191.2-27.6 37.8-69.399 69.1-125.3 93.8-25.7 11.3-36.8 41.7-24.8 67.101l36 76c11.6 24.399 40.3 35.1 65.1 24.399 66.2-28.6 122.101-64.8 167.7-108.8 55.601-53.7 93.7-114.3 114.3-181.9 20.601-67.6 30.9-159.8 30.9-276.8v-239c0-27.599-22.401-50-50-50zM106.036 913.497c65.4-28.5 121-64.699 166.9-108.6 56.1-53.7 94.4-114.1 115-181.2 20.6-67.1 30.899-159.6 30.899-277.5v-239c0-27.6-22.399-50-50-50h-304c-27.6 0-50 22.4-50 50v304c0 27.601 22.4 50 50 50h145.5c-1.9 79.601-20.4 143.3-55.4 191.2-27.6 37.8-69.4 69.1-125.3 93.8-25.7 11.3-36.8 41.7-24.8 67.101l35.9 75.8c11.601 24.399 40.501 35.2 65.301 24.399z"
+                ></path>
+              </svg>
+              <p class="leading-relaxed mb-6">
+                Linda Irakoze at Solace Ministries was a pleasure to work with.
+                Her commitment to excellence and warm approach in greeting
+                visitors left a lasting impression. I highly recommend Linda for
+                their dedication and professionalism.
+              </p>
+              <a class="inline-flex items-center">
+                <img
+                  src="./images/1572282354247.jpeg"
+                  class="w-12 h-12 rounded-full flex-shrink-0 object-cover object-center"
+                />
+                <span class="flex-grow flex flex-col pl-4">
+                  <span class="title-font font-medium text-gray-900"
+                    >Jean GAKWANDI</span
+                  >
+                  <span class="text-gray-500 text-sm">SOLACE MINISTRIES</span>
+                </span>
+              </a>
+            </div>
+          </div>
+          <div class="p-4 md:w-1/2 w-full">
+            <div class="h-full border-2 border-gray1 p-8 rounded-xl">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="rgb(61 61 61)"
+                class="block w-5 h-5 text-gray-400 mb-4"
+                viewBox="0 0 975.036 975.036"
+              >
+                <path
+                  d="M925.036 57.197h-304c-27.6 0-50 22.4-50 50v304c0 27.601 22.4 50 50 50h145.5c-1.9 79.601-20.4 143.3-55.4 191.2-27.6 37.8-69.399 69.1-125.3 93.8-25.7 11.3-36.8 41.7-24.8 67.101l36 76c11.6 24.399 40.3 35.1 65.1 24.399 66.2-28.6 122.101-64.8 167.7-108.8 55.601-53.7 93.7-114.3 114.3-181.9 20.601-67.6 30.9-159.8 30.9-276.8v-239c0-27.599-22.401-50-50-50zM106.036 913.497c65.4-28.5 121-64.699 166.9-108.6 56.1-53.7 94.4-114.1 115-181.2 20.6-67.1 30.899-159.6 30.899-277.5v-239c0-27.6-22.399-50-50-50h-304c-27.6 0-50 22.4-50 50v304c0 27.601 22.4 50 50 50h145.5c-1.9 79.601-20.4 143.3-55.4 191.2-27.6 37.8-69.4 69.1-125.3 93.8-25.7 11.3-36.8 41.7-24.8 67.101l35.9 75.8c11.601 24.399 40.501 35.2 65.301 24.399z"
+                ></path>
+              </svg>
+              <p class="leading-relaxed mb-6">
+                I was impressed by Linda Irakoze's dedication and effective
+                communication at Solace Health. Their role as a Store Keeper
+                showcased strong organizational skills. I highly recommend Linda
+                for their valuable contributions.
+              </p>
+              <a class="inline-flex items-center">
+                <img
+                  alt="testimonial"
+                  src="./images/uwizeye_g_160x180.jpg"
+                  class="w-12 h-12 rounded-full flex-shrink-0 object-cover object-center"
+                />
+                <span class="flex-grow flex flex-col pl-4">
+                  <span class="title-font font-medium text-gray-900"
+                    >Glorieuse UWIZEYE</span
+                  >
+                  <span class="text-gray-500 text-sm"
+                    >SOLACE HEALTH CENTER</span
+                  >
+                </span>
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- CONTACT -->
+
+      <body class="bg-gray-800 text-gray-100 px-8 py-12">
+        <div
+          class="max-w-screen-xl mt-24 px-8 grid gap-8 grid-cols-1 md:grid-cols-2 md:px-12 lg:px-16 xl:px-32 py-16 mx-auto border-2 border-gray1/10 text-gray-900 rounded-xl shadow-lg"
+        >
+          <div class="flex flex-col justify-between">
+            <div>
+              <h2 class="text-4xl lg:text-5xl font-bold leading-tight">
+                Lets talk about everything!
+              </h2>
+              <div class="text-gray-700 mt-8">
+                Hate forms? Send us an
+                <a href="mailto:irakozelinda27@gmail.com" class="underline"
+                  >email</a
+                >
+                instead.
+              </div>
+            </div>
+            <div class="mt-8 text-center">This is it</div>
+          </div>
+          <div class="">
+            <div>
+              <span class="uppercase text-sm text-gray-600 font-bold"
+                >Full Name</span
+              >
+              <input
+                class="w-full bg-gray-300 text-gray-900 mt-2 p-3 rounded-lg focus:outline-none focus:shadow-outline"
+                type="text"
+                placeholder=""
+              />
+            </div>
+            <div class="mt-8">
+              <span class="uppercase text-sm text-gray-600 font-bold"
+                >Email</span
+              >
+              <input
+                class="w-full bg-gray-300 text-gray-900 mt-2 p-3 rounded-lg focus:outline-none focus:shadow-outline"
+                type="text"
+              />
+            </div>
+            <div class="mt-8">
+              <span class="uppercase text-sm text-gray-600 font-bold"
+                >Message</span
+              >
+              <textarea
+                class="w-full h-32 bg-gray-300 text-gray-900 mt-2 p-3 rounded-lg focus:outline-none focus:shadow-outline"
+              ></textarea>
+            </div>
+            <div class="mt-8">
+              <button
+                class="uppercase text-sm font-bold tracking-wide bg-indigo-500 text-gray-100 p-3 rounded-lg w-full focus:outline-none focus:shadow-outline"
+              >
+                Send Message
+              </button>
+            </div>
+          </div>
+        </div>
+      </body>
+    </main>
   </body>
 </html>

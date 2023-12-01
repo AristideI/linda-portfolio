@@ -1,3 +1,81 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+* {
+  transition: all 1s;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+::-webkit-scrollbar {
+  width: 0;
+  right: 0;
+}
+
+.blur {
+  background: radial-gradient(#c5d926, #3d3d3d);
+}
+
+/* Services */
+
+.services {
+  margin: 2rem 0;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 5rem;
+}
+
+.container {
+  background-image: linear-gradient(to left, #51b4e4, white);
+  height: 20rem;
+  border-radius: 10px;
+  position: relative;
+}
+
+.content {
+  height: 96%;
+  width: 98%;
+  background: var(--blue1);
+  position: absolute;
+  top: 2%;
+  left: 1%;
+  border-radius: 9px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.content-title {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}
+.content-title > img {
+  width: 3rem;
+}
+.content-title > p {
+  color: white;
+  font-weight: bold;
+  font-size: 1.5rem;
+}
+
+.content > p {
+  padding: 0 2rem;
+  color: white;
+  font-size: 1.2rem;
+  line-height: 1.5rem;
+  text-align: justify;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+
+/* Services Responsiveness */
+
+@media only screen and (max-width: 800px) {
+  .services {
+    margin: 2rem 0;
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 5rem;
+  }
+}
