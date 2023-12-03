@@ -31,8 +31,10 @@
     <link rel="stylesheet" href="./src/input.css" />
     <title>Document</title>
   </head>
-  <body class="bg-bg text-gray1 px-[8%]">
-    <header class="flex justify-center gap-4 font-semibold text-base py-4">
+  <body class="bg-bg text-gray1 text-xl px-[8%] md:px-[5%]">
+    <header
+      class="flex justify-center gap-4 md:gap-8 font-semibold text-base py-4"
+    >
       <a href="#about">About me</a>
       <a href="#services">services</a>
       <a href="#exprience">Expriences</a>
@@ -42,20 +44,26 @@
     </header>
     <main>
       <!-- HERO SECTION -->
-      <article class="flex justify-between p-8 items-center mt-10">
-        <section class="w-1/2">
-          <h1 class="font-serif font-bold text-7xl whitespace-nowrap mb-8">
+      <article
+        class="flex justify-center gap-4 md:flex-col p-8 items-center mt-10"
+      >
+        <section class="w-1/2 md:w-full md:order-2">
+          <h1
+            class="font-serif md:text-center font-bold text-7xl whitespace-nowrap mb-8"
+          >
             Linda Irakoze
           </h1>
-          <p class="w-5/6">
+          <p class="w-5/6 md:text-center md:w-full">
             Step into a world of project precision and front desk finesse with
             <span class="font-serif text-green1">ME</span>. My mission is to
             enhance your projects and ensure a warm welcome at the front desk.
           </p>
         </section>
-        <section class="w-96 h-[30rem] bg-gray2 rounded-full overflow-hidden">
+        <section
+          class="w-96 md:w-full md:h-[35rem] md:order-1 h-[30rem] bg-gray2 rounded-full overflow-hidden"
+        >
           <img
-            class="w-full h-full object-cover heroImage"
+            class="w-full md:w-11/12 h-full object-cover heroImage"
             src="./images/libg3.png"
             alt=""
           />
@@ -64,9 +72,11 @@
       <!-- ABOUT ME -->
       <article
         id="about"
-        class="w-full flex justify-center items-center gap-12 h-[90vh] py-12"
+        class="w-full flex md:flex-col justify-center items-center gap-12 h-[80vh] py-12"
       >
-        <section class="w-2/5 flex flex-col justify-between h-full gap-4">
+        <section
+          class="w-2/5 flex flex-col justify-between h-full md:w-full gap-4"
+        >
           <div class="w-full flex h-1/2 gap-4">
             <div class="w-1/2 h-full rounded-lg overflow-hidden">
               <img
@@ -91,8 +101,8 @@
             />
           </div>
         </section>
-        <section class="w-2/5 flex flex-col gap-4">
-          <h1 class="font-serif font-bold text-2xl">About Me</h1>
+        <section class="w-2/5 flex flex-col gap-4 md:w-full">
+          <h1 class="font-serif font-bold text-4xl">About Me</h1>
           <p>
             Dedicated professional with a strong work ethic and a knack for
             problem-solving. Adept at project management, customer care, and
@@ -105,9 +115,12 @@
 
       <!-- SERVICES -->
 
-      <article id="services" class="mt-12 flex justify-between items-center">
-        <section class="w-2/5">
-          <h1 class="font-serif font-bold text-2xl mb-4">Services</h1>
+      <article
+        id="services"
+        class="mt-12 flex justify-between items-center gap-8 md:flex-col"
+      >
+        <section class="w-2/5 md:w-full">
+          <h1 class="font-serif font-bold text-4xl mb-4">Services</h1>
           <p>
             Welcome to a suite of services for project excellence. I specialize
             in clear communication, team support, quality assurance, front desk
@@ -115,7 +128,7 @@
             services ensure success and excellence in every endeavor.
           </p>
         </section>
-        <section class="w-3/5 grid grid-cols-2 gap-6">
+        <section class="w-3/5 md:w-full grid grid-cols-2 gap-6">
           <div
             class="bg-gray1 rounded-tl-3xl rounded-br-3xl p-4 flex items-center gap-4 text-bg"
           >
@@ -174,7 +187,7 @@
           class="relative min-h-screen flex flex-col justify-center overflow-hidden"
         >
           <div class="w-full max-w-6xl mx-auto px-4 md:px-6 py-24">
-            <p class="font-bold text-3xl font-serif text-center">Experience</p>
+            <p class="font-bold text-4xl font-serif text-center">Experience</p>
             <div
               class="flex flex-col justify-center divide-y divide-slate-200 [&>*]:py-16"
             >
@@ -522,11 +535,11 @@
       <!-- Testimonials -->
 
       <section class="text-gray1" id="contact">
-        <p class="font-bold font-serif text-3xl text-center mb-8">
+        <p class="font-bold font-serif text-4xl text-center mb-8">
           Testimonials
         </p>
-        <div class="flex flex-wrap -m-4">
-          <div class="p-4 md:w-1/2 w-full">
+        <div class="flex -m-4 md:flex-col">
+          <div class="p-4 w-full">
             <div class="h-full border-2 border-gray1 text-gray1 p-8 rounded-xl">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -558,7 +571,7 @@
               </a>
             </div>
           </div>
-          <div class="p-4 md:w-1/2 w-full">
+          <div class="p-4 w-full">
             <div class="h-full border-2 border-gray1 p-8 rounded-xl">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -598,63 +611,103 @@
 
       <!-- CONTACT -->
 
-      <body class="bg-gray-800 text-gray-100 px-8 py-12">
-        <div
-          class="max-w-screen-xl mt-24 px-8 grid gap-8 grid-cols-1 md:grid-cols-2 md:px-12 lg:px-16 xl:px-32 py-16 mx-auto border-2 border-gray1/10 text-gray-900 rounded-xl shadow-lg"
-        >
-          <div class="flex flex-col justify-between">
-            <div>
-              <h2 class="text-4xl lg:text-5xl font-bold leading-tight">
-                Lets talk about everything!
-              </h2>
-              <div class="text-gray-700 mt-8">
-                Hate forms? Send us an
-                <a href="mailto:irakozelinda27@gmail.com" class="underline"
-                  >email</a
-                >
-                instead.
-              </div>
+      <br /><br />
+      <br />
+      <br />
+
+      <div class="max-w-screen-md mx-auto p-5">
+        <div class="text-center mb-16">
+          <p
+            class="mt-4 text-sm leading-7 text-gray-500 font-regular uppercase"
+          >
+            Contact
+          </p>
+          <h3
+            class="text-3xl sm:text-4xl leading-normal font-extrabold tracking-tight text-gray-900"
+          >
+            Get In <span class="text-indigo-600">Touch</span>
+          </h3>
+        </div>
+
+        <form class="w-full">
+          <div class="flex flex-wrap -mx-3 mb-6">
+            <div class="w-full md:w-1/2 px-3 mb-6 md:mb-0">
+              <label
+                class="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2"
+                for="grid-first-name"
+              >
+                First Name
+              </label>
+              <input
+                class="appearance-none block w-full bg-transparent text-gray-700 border-2 border-gray1 rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white"
+                id="grid-first-name"
+                type="text"
+                placeholder="Jane"
+              />
             </div>
-            <div class="mt-8 text-center">This is it</div>
+            <div class="w-full md:w-1/2 px-3">
+              <label
+                class="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2"
+                for="grid-last-name"
+              >
+                Last Name
+              </label>
+              <input
+                class="appearance-none block w-full bg-transparent text-gray-700 border-2 border-gray1 rounded py-3 px-4 leading-tight focus:outline-none focus:bg-white focus:border-gray-500"
+                id="grid-last-name"
+                type="text"
+                placeholder="Doe"
+              />
+            </div>
           </div>
-          <div class="">
-            <div>
-              <span class="uppercase text-sm text-gray-600 font-bold"
-                >Full Name</span
+          <div class="flex flex-wrap -mx-3 mb-6">
+            <div class="w-full px-3">
+              <label
+                class="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2"
+                for="grid-password"
               >
+                Email Address
+              </label>
               <input
-                class="w-full bg-gray-300 text-gray-900 mt-2 p-3 rounded-lg focus:outline-none focus:shadow-outline"
-                type="text"
-                placeholder=""
+                class="appearance-none block w-full text-gray-700 bg-transparent border-2 border-gray1 rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white focus:border-gray-500"
+                id="grid-email"
+                type="email"
+                placeholder="********@*****.**"
               />
             </div>
-            <div class="mt-8">
-              <span class="uppercase text-sm text-gray-600 font-bold"
-                >Email</span
+          </div>
+
+          <div class="flex flex-wrap -mx-3 mb-6">
+            <div class="w-full px-3">
+              <label
+                class="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2"
+                for="grid-password"
               >
-              <input
-                class="w-full bg-gray-300 text-gray-900 mt-2 p-3 rounded-lg focus:outline-none focus:shadow-outline"
-                type="text"
-              />
-            </div>
-            <div class="mt-8">
-              <span class="uppercase text-sm text-gray-600 font-bold"
-                >Message</span
-              >
+                Your Message
+              </label>
               <textarea
-                class="w-full h-32 bg-gray-300 text-gray-900 mt-2 p-3 rounded-lg focus:outline-none focus:shadow-outline"
-              ></textarea>
+                rows="10"
+                class="appearance-none block w-full bg-transparent text-gray-700 border-2 border-gray1 rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white focus:border-gray-500"
+              >
+              </textarea>
             </div>
-            <div class="mt-8">
+            <div class="flex justify-between w-full px-3">
+              <div class="md:flex md:items-center">
+                <label class="block text-gray-500 font-bold">
+                  <input class="mr-2 leading-tight" type="checkbox" />
+                  <span class="text-sm"> Send me your newsletter! </span>
+                </label>
+              </div>
               <button
-                class="uppercase text-sm font-bold tracking-wide bg-indigo-500 text-gray-100 p-3 rounded-lg w-full focus:outline-none focus:shadow-outline"
+                class="shadow bg-indigo-600 hover:bg-indigo-400 focus:shadow-outline focus:outline-none text-white font-bold py-2 px-6 rounded"
+                type="submit"
               >
                 Send Message
               </button>
             </div>
           </div>
-        </div>
-      </body>
+        </form>
+      </div>
     </main>
   </body>
 </html>
